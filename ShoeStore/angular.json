@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ShoeStore"
+    }
+  },
+  "defaultProject": "ShoeStore",
+  "cli": {
+    "analytics": "8ff46a59-2263-4635-a0bf-3c6ac2c3a9ca"
+  }
 }
