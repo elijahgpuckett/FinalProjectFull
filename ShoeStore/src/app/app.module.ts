@@ -13,6 +13,8 @@ import { UsersComponent } from './admin/users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdduserComponent } from './admin/users/adduser/adduser.component';
 import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
+import { BooksComponent } from './admin/books/books.component';
+import { AddbookComponent } from './admin/books/addbook/addbook.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
     SignUpComponent,
     UsersComponent,
     AdduserComponent,
-    ViewuserComponent
+    ViewuserComponent,
+    BooksComponent,
+    AddbookComponent
   ],
   imports: [
     BrowserModule,
