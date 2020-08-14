@@ -15,14 +15,14 @@
           <td>{{book.id}}</td>
           <td>{{book.name}}</td>
           <td>
-            <button type="button" class="btn btn-primary">Show Details</button>
+            <button type="button" class="btn btn-primary" (click)="viewBook(book.id)"> Show Details</button>
           </td>
         </tr>
       </tbody>
     </table>
   </div>
   <div class="col-md-6">
-    <app-addbook *ngIf="action === 'add'" [book]="selectedBook" (bookAddedEvent)="refreshData()"></app-addbook>
+    <app-viewbook *ngIf="action === 'view'" [book]="selectedBook" (bookDeletedEvent)="refreshData()"></app-viewbook>
+    <app-addbook *ngIf="action === 'edit' || action === 'add'" [book]="selectedBook" (bookAddedEvent)="refreshData()"></app-addbook>
   </div>
-
 </div>

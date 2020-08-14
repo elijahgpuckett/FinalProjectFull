@@ -45,4 +45,16 @@ public class BookController {
 		bookRepository.save(book);
 		this.bytes = null;
 	}
+
+	@DeleteMapping(path = { "/{id}" })
+	public Book deleteBook(@PathVariable("id") long id) {
+		Book book = bookRepository.getOne(id);
+		bookRepository.deleteById(id);
+		return book;
+	}
+
+	@PutMapping("/update")
+	public void updateBook(@RequestBody Book book) {
+		bookRepository.save(book);
+	}
 }
