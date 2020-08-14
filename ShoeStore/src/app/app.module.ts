@@ -12,6 +12,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { UsersComponent } from './admin/users/users.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AdduserComponent } from './admin/users/adduser/adduser.component';
+import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AdduserComponent } from './admin/users/adduser/adduser.component';
     LoginComponent,
     SignUpComponent,
     UsersComponent,
-    AdduserComponent
+    AdduserComponent,
+    ViewuserComponent
   ],
   imports: [
     BrowserModule,
